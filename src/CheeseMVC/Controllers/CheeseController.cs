@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using CheeseMVC.ViewModels;
 using CheeseMVC.Data;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace CheeseMVC.Controllers
 {
@@ -43,7 +44,7 @@ namespace CheeseMVC.Controllers
                     Type = addCheeseViewModel.Type
                 };
 
-                context.Cheeses.Add(newCheese);conte
+                context.Cheeses.Add(newCheese);
                 context.SaveChanges();
 
                 return Redirect("/Cheese");
