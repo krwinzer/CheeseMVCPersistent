@@ -99,7 +99,7 @@ namespace CheeseMVC.Controllers
 
                 }
 
-                return Redirect(string.Format("/Menu/ViewMenu/{0}", addMenuItemViewModel.Menu));
+                return Redirect(string.Format("/Menu/ViewMenu/{0}", addMenuItemViewModel.MenuID));
             }
 
             return View(addMenuItemViewModel);
